@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kididee Technologies - Dashboard</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 900px;
+      margin: 25px auto;
+    }
+
+    .welcome {
+      margin-bottom: 20px;
+    }
+
+    .balance {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    .balance h2 {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .amount {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .deposit {
+      background: #16a34a;
+    }
+
+    .withdraw {
+      background: #dc2626;
+    }
+
+    .invest {
+      background: #2563eb;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .notice {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      padding: 15px;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Kididee Technologies</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="welcome">
+      <h2>Welcome to your Dashboard 👋</h2>
+      <p>Manage your account below.</p>
+    </div>
+
+    <div class="balance">
+      <h2>Available Balance</h2>
+      <div class="amount">$0.00</div>
+    </div>
+
+    <div class="buttons">
+      <button class="deposit" onclick="deposit()">Deposit</button>
+      <button class="withdraw" onclick="withdraw()">Withdraw</button>
+      <button class="invest" onclick="invest()">Invest</button>
+    </div>
+
+    <div class="card">
+      <h3>Account</h3>
+      <p>Account status: <strong>Active</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Investment</h3>
+      <p>No active investments yet.</p>
+    </div>
+
+    <div class="notice">
+      <strong>Important:</strong> This dashboard is currently a front-end demo.
+      Deposits, withdrawals and investments are not connected to real money.
+    </div>
+
+  </div>
+
+  <script>
+    function deposit() {
+      alert("Deposit feature coming soon.");
+    }
+
+    function withdraw() {
+      alert("Withdrawal feature coming soon.");
+    }
+
+    function invest() {
+      alert("Investment feature coming soon.");
+    }
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kididee Technologies - Dashboard</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 900px;
+      margin: 25px auto;
+    }
+
+    .welcome {
+      margin-bottom: 20px;
+    }
+
+    .balance {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    .balance h2 {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .amount {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .deposit {
+      background: #16a34a;
+    }
+
+    .withdraw {
+      background: #dc2626;
+    }
+
+    .invest {
+      background: #2563eb;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .notice {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      padding: 15px;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Kididee Technologies</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="welcome">
+      <h2>Welcome to your Dashboard 👋</h2>
+      <p>Manage your account below.</p>
+    </div>
+
+    <div class="balance">
+      <h2>Available Balance</h2>
+      <div class="amount">$0.00</div>
+    </div>
+
+    <div class="buttons">
+      <button class="deposit" onclick="deposit()">Deposit</button>
+      <button class="withdraw" onclick="withdraw()">Withdraw</button>
+      <button class="invest" onclick="invest()">Invest</button>
+    </div>
+
+    <div class="card">
+      <h3>Account</h3>
+      <p>Account status: <strong>Active</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Investment</h3>
+      <p>No active investments yet.</p>
+    </div>
+
+    <div class="notice">
+      <strong>Important:</strong> This dashboard is currently a front-end demo.
+      Deposits, withdrawals and investments are not connected to real money.
+    </div>
+
+  </div>
+
+  <script>
+    function deposit() {
+      alert("Deposit feature coming soon.");
+    }
+
+    function withdraw() {
+      alert("Withdrawal feature coming soon.");
+    }
+
+    function invest() {
+      alert("Investment feature coming soon.");
+    }
+  </script>
+
+</body>
+</html>
